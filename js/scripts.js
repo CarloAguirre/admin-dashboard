@@ -66,3 +66,55 @@ let barChartOptions = {
   barChart.render();
 
 
+
+
+  let areaChartOptions = {
+    series: [{
+    name: 'Purchase Orders',
+    // type: 'area',
+    data: [44, 55, 31, 47, 31, 109, 100]
+  }, {
+    name: 'Sales Order',
+    type: 'line',
+    data: [11, 32, 45, 32, 43, 54, 37]
+  }],
+    chart: {
+    height: 350,
+    type: 'area',
+    toolbar: {
+        show: false
+    },
+  },
+  colors: ["#4f35a1", "#246dec"],
+  dataLabels: {
+    enabled: false
+  },
+  stroke: {
+    curve: 'smooth'
+  },
+  labels: ['Jan', 'Feb', 'Mar', 'Apr', 'may', 'Jun', 'Jul'],
+  markers: {
+    size: 0
+  },
+  yaxis: [
+    {
+      title: {
+        text: 'Purchase Orders',
+      },
+    },
+    {
+      opposite: true,
+      title: {
+        text: 'Sales Orders',
+      },
+    },
+  ],
+  tooltip: {
+    shared: true,
+    intersect: false,
+  }
+  };
+
+  var areaChart = new ApexCharts(document.querySelector("#area-chart"), areaChartOptions);
+  areaChart.render();
+
