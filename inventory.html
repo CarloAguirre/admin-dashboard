@@ -1,0 +1,196 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.googleapis.com"><link rel="preconnect" href="https://fonts.gstatic.com" crossorigin><link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@100;200;300;400;500;600;700;800;900&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons+Outlined"
+      rel="stylesheet">
+      <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-GLhlTQ8iRABdZLl6O3oVMWSktQOp6b7In1Zl3/Jr59b6EGGoI1aFkw7cmDA6j6gD" crossorigin="anonymous">
+    <link rel="stylesheet" href="./css/styles.css">
+    <title>Admin Dashboard</title>
+</head>
+<body>
+    <div class="grid-container">
+        <header class="header">
+            <div
+            class="menu-icon" onclick="openSidebar()">
+                <span class="material-icons-outlined">
+                    menu
+                </span>
+            </div>
+            <div class="header-left">
+                <span class="material-icons-outlined">
+                    search
+                </span>
+            </div>
+            <div class="header-right">
+                <span class="material-icons-outlined">
+                    notifications
+                </span>
+                <span class="material-icons-outlined">
+                    mail
+                </span>
+                <span class="material-icons-outlined">
+                    account_circle
+                </span>
+                    
+            </div>
+        </header>
+
+        <aside id="sidebar">
+            <div class="sidebar-title">
+                <div class="sidebar-brand">
+                    <span class="material-icons-outlined">
+                        inventory
+                    </span> Carlo's Inventory
+                </div>
+                <span class="material-icons-outlined" onclick="closeSidebar()">
+                    close
+                </span>
+            </div>
+
+            <ul class="sidebar-list">
+                <a href="index.html" class="anchor-link">
+                    <li class="sidebar-list-item">
+                        <span class="material-icons-outlined">
+                            dashboard
+                        </span> Dashboard
+                    </li>
+                </a>
+                <a href="products.html" class="anchor-link">
+                    <li class="sidebar-list-item">
+                        <span class="material-icons-outlined">
+                            inventory_2
+                        </span> Products
+                    </li>
+                </a>
+                <li class="sidebar-list-item selected-label">
+                    <span class="material-icons-outlined">
+                        fact_check
+                    </span> Inventory
+                </li>
+                <li class="sidebar-list-item">
+                    <span class="material-icons-outlined">
+                        add_shopping_cart
+                    </span> Purchase Orders
+                </li>
+                <li class="sidebar-list-item">
+                    <span class="material-icons-outlined">
+                        shopping_cart
+                    </span> Sales Orders
+                </li>
+                <li class="sidebar-list-item">
+                    <span class="material-icons-outlined">
+                        bar_chart
+                    </span> Reports
+                </li>
+                <li class="sidebar-list-item">
+                    <span class="material-icons-outlined">
+                        settings
+                    </span> Settings
+                </li>
+            </ul>
+        </aside>
+
+        <main class="main-container">
+            <div class="main-title">
+                <p class="font-weight-bold">Inventory</p>
+            </div>
+
+            <div class="charts">
+                <div class="charts-card">
+                    <table class="table">
+                        <thead>
+                          <tr>
+                            <th scope="col">#</th>
+                            <th scope="col">Product</th>
+                            <th scope="col">Units</th>
+                            <th scope="col">Sold</th>
+                          </tr>
+                        </thead>
+                        <tbody>
+                          <tr>
+                            <th scope="row" class="table-primary">1</th>
+                            <td class="table-primary">Laptops</td>
+                            <td class="table-primary">55</td>
+                            <td class="table-primary">19</td>
+                          </tr>
+                          <tr>
+                            <th scope="row" class="table-success">2</th>
+                            <td class="table-success">Phones</td>
+                            <td class="table-success">44</td>
+                            <td class="table-success">38</td>
+                          </tr>
+                          <tr>
+                            <th scope="row" class="table-warning">3</th>
+                            <td class="table-warning">Monitors</td>
+                            <td class="table-warning">35</td>
+                            <td class="table-warning">9</td>
+                          </tr>
+                          <tr>
+                            <th scope="row" class="table-danger">4</th>
+                            <td class="table-danger">Headphones</td>
+                            <td class="table-danger">18</td>
+                            <td class="table-danger">12</td>
+                          </tr>
+                          <tr>
+                            <th scope="row" class="table-purple">5</th>
+                            <td class="table-purple">Cameras</td>
+                            <td class="table-purple">6</td>
+                            <td class="table-purple">2</td>
+                          </tr>
+                          <tr>
+                            <th scope="row" class="table-purple">6</th>
+                            <td class="table-purple">USB's</td>
+                            <td class="table-purple">6</td>
+                            <td class="table-purple">4</td>
+                          </tr>
+                          <tr>
+                            <th scope="row" class="table-purple">7</th>
+                            <td class="table-purple">Mouse</td>
+                            <td class="table-purple">5</td>
+                            <td class="table-purple">1</td>
+                          </tr>
+                          <tr>
+                            <th scope="row" class="table-purple">8</th>
+                            <td class="table-purple">Keyboard</td>
+                            <td class="table-purple">4</td>
+                            <td class="table-purple">1</td>
+                          </tr>
+                          <tr>
+                            <th scope="row" class="table-purple">9</th>
+                            <td class="table-purple">Chargers</td>
+                            <td class="table-purple">4</td>
+                            <td class="table-purple">3</td>
+                          </tr>
+                          <tr>
+                            <th scope="row" class="table-purple">10</th>
+                            <td class="table-purple">Batteries</td>
+                            <td class="table-purple">3</td>
+                            <td class="table-purple">0</td>
+                          </tr>
+                        </tbody>
+                      </table>
+                </div>
+
+                <div class="charts-card">
+                    <p class="chart-title">Total Products</p>
+                    <div id="chart-inventoryOne"></div>
+                </div>
+
+            </div>                  
+        </main>
+
+    </div>
+
+    <!-- SCRIPTS -->
+    <!-- ApexCharts -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/apexcharts/3.36.3/apexcharts.min.js"></script>
+    <!-- Bootstrap -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js" integrity="sha384-w76AqPfDkMBDXo30jS1Sgez6pr3x5MlQ1ZAGC+nuZB+EYdgRZgiwxhTBTkF7CXvN" crossorigin="anonymous"></script>
+    <!-- JS -->
+    <script src="js/scripts.js"></script>
+</body>
+</html>

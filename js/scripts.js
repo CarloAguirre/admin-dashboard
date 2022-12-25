@@ -52,7 +52,7 @@ let barChartOptions = {
     show: false
   },
   xaxis: {
-    categories: ['Laptop', 'Phone', 'Monitor', 'Headphones', 'Camera'
+    categories: ['Laptops', 'Phones', 'Monitors', 'Headphones', 'Cameras'
     ],
   },
   yaxis: {
@@ -118,3 +118,26 @@ let barChartOptions = {
   var areaChart = new ApexCharts(document.querySelector("#area-chart"), areaChartOptions);
   areaChart.render();
 
+
+  // invenotory //
+  var InventoryOptionsOne = {
+    series: [55, 44, 35, 18, 15],
+    chart: {
+    type: 'donut',
+  },
+  labels: ['Laptops', 'Phones', 'Monitors', 'Headphones', 'Others'],
+  responsive: [{
+    breakpoint: 480,
+    options: {
+      chart: {
+        width: 200
+      },
+      legend: {
+        position: 'bottom'
+      }
+    }
+  }]
+  };
+
+  var InventoryOnechart = new ApexCharts(document.querySelector("#chart-inventoryOne"), InventoryOptionsOne);
+  InventoryOnechart.render();
