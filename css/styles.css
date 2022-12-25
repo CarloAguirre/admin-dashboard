@@ -91,6 +91,7 @@ body{
 }
 .main-title > p{
     font-size: 20px;
+    font-weight: 600;
 }
 .main-cards{
     display: grid;
